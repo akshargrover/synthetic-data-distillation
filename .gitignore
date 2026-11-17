@@ -1,0 +1,17 @@
+# environments and caches
+.venv/
+__pycache__/
+*.pyc
+
+# large / regenerable artefacts
+code/models/
+*.log
+
+# private documents kept out of the public repository
+*.docx
+!paper/Synthetic_Data_Distillation_IEEE_Paper.docx
+Population_Change_Japan_IEEE_Paper_v2.pdf
+report/
+
+# Office lock files
+~$*

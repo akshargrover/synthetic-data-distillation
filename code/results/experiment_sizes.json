@@ -1,0 +1,23 @@
+{
+  "Seeds only": 80,
+  "Seeds + raw synthetic": 3026,
+  "Seeds + heuristic-filtered": 2560,
+  "Seeds + dedup (tau=0.90)": 2525,
+  "Seeds + full filter (proposed)": 1694,
+  "Synthetic only (full filter)": 1614,
+  "Oracle: all real training data": 1351,
+  "Plain prompting (size-matched)": 1097,
+  "Persona+style prompting (size-matched)": 1097,
+  "tau=0.8": 2041,
+  "tau=0.85": 2367,
+  "tau=0.95": 2556,
+  "tau=1.01": 2560,
+  "synthetic n=25": 330,
+  "real n=25": 330,
+  "synthetic n=50": 580,
+  "real n=50": 580,
+  "synthetic n=100": 1050,
+  "real n=100": 1032,
+  "synthetic n=200": 1611,
+  "real n=200": 1351
+}

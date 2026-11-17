@@ -1,0 +1,7 @@
+method,data,n_train,macro_f1,accuracy
+TF-IDF + LR,Seeds only,80,0.7130913928698501,0.72
+MiniLM + LR,Seeds only,80,0.8925279062160782,0.8925
+TF-IDF + LR,Seeds + full filter (proposed),1694,0.74673988614337,0.7575
+MiniLM + LR,Seeds + full filter (proposed),1694,0.8823645766694618,0.8825
+TF-IDF + LR,Oracle: all real training data,1351,0.9377410353076432,0.9375
+MiniLM + LR,Oracle: all real training data,1351,0.9476497654955853,0.9475

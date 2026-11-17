@@ -1,0 +1,19 @@
+# Install PyTorch with CUDA first (adjust cu124 to your driver, or use the CPU wheel).
+# uv is much faster than pip:
+#   uv venv .venv --python 3.12
+#   uv pip install --python .venv torch==2.5.1 --index-url https://download.pytorch.org/whl/cu124
+#   uv pip install --python .venv -r code/requirements.txt
+torch==2.5.1
+transformers==4.46.3
+sentence-transformers==3.3.1
+accelerate==1.1.1
+bitsandbytes==0.45.0
+datasets==3.1.0
+scikit-learn==1.5.2
+pandas==2.2.3
+numpy<2.1
+matplotlib==3.9.2
+psutil
+python-docx==1.1.2    # paper builder
+latex2mathml==3.77.0  # paper builder (equations)
+openai>=1.40          # only needed for TEACHER_BACKEND = "openai" (Ollama / LM Studio / Groq)

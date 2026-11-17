@@ -1,0 +1,20 @@
+{
+  "diverse": {
+    "mode": "diverse",
+    "teacher": "Qwen/Qwen2.5-3B-Instruct (4-bit NF4)",
+    "calls": 300,
+    "samples": 2946,
+    "seconds": 972.7,
+    "samples_per_sec": 3.03,
+    "approx_words_out": 53173
+  },
+  "plain": {
+    "mode": "plain",
+    "teacher": "Qwen/Qwen2.5-3B-Instruct (4-bit NF4)",
+    "calls": 150,
+    "samples": 1485,
+    "seconds": 317.4,
+    "samples_per_sec": 4.68,
+    "approx_words_out": 26673
+  }
+}

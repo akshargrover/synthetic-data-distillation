@@ -1,0 +1,81 @@
+{
+  "bootstrap_ci": {
+    "Teacher zero-shot": {
+      "f1": 0.8227825514199966,
+      "lo": 0.7863069799231309,
+      "hi": 0.8560797241813255
+    },
+    "Teacher few-shot": {
+      "f1": 0.8720511165519167,
+      "lo": 0.8380170069578228,
+      "hi": 0.9023763413217505
+    },
+    "Student seeds only": {
+      "f1": 0.8312299350069525,
+      "lo": 0.7928006125518284,
+      "hi": 0.8644001996014077
+    },
+    "Student + raw synthetic": {
+      "f1": 0.8503366292898976,
+      "lo": 0.8152290848605894,
+      "hi": 0.881591420748694
+    },
+    "Student proposed": {
+      "f1": 0.8471859647974554,
+      "lo": 0.809917283199372,
+      "hi": 0.878715832039278
+    },
+    "Student all real data": {
+      "f1": 0.9550727174479361,
+      "lo": 0.9334293126791299,
+      "hi": 0.9738283899079243
+    },
+    "MiniLM + LR seeds only": {
+      "f1": 0.8925279062160782,
+      "lo": 0.8614516716704971,
+      "hi": 0.9192248511695938
+    },
+    "MiniLM + LR proposed data": {
+      "f1": 0.8823645766694618,
+      "lo": 0.8488339403303609,
+      "hi": 0.9100387718892541
+    }
+  },
+  "mcnemar_vs_proposed": {
+    "Teacher zero-shot": {
+      "a_only": 39,
+      "b_only": 30,
+      "p_value": 0.3355576182340152
+    },
+    "Teacher few-shot": {
+      "a_only": 22,
+      "b_only": 32,
+      "p_value": 0.22032849417661093
+    },
+    "Student seeds only": {
+      "a_only": 27,
+      "b_only": 20,
+      "p_value": 0.38169339766321275
+    },
+    "Student + raw synthetic": {
+      "a_only": 17,
+      "b_only": 18,
+      "p_value": 1.0
+    },
+    "Student all real data": {
+      "a_only": 6,
+      "b_only": 48,
+      "p_value": 3.2565301566478407e-09
+    },
+    "MiniLM + LR seeds only": {
+      "a_only": 14,
+      "b_only": 31,
+      "p_value": 0.016094360031274842
+    },
+    "MiniLM + LR proposed data": {
+      "a_only": 5,
+      "b_only": 18,
+      "p_value": 0.010622024536132812
+    }
+  }
+}

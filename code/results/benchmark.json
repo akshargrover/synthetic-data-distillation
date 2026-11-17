@@ -1,0 +1,33 @@
+{
+  "cpu": "4 threads, 16 logical cores available",
+  "torch": "2.5.1+cu124",
+  "student_cpu_fp32": {
+    "macro_f1": 0.8471859647974554,
+    "latency_ms_mean": 22.258615251776064,
+    "latency_ms_p95": 31.617810038733293,
+    "throughput_qps_bs32": 56.11891935635936,
+    "size_mb": 255.46773719787598,
+    "params": 66961162
+  },
+  "student_cpu_int8": {
+    "macro_f1": 0.8517193916471368,
+    "latency_ms_mean": 9.536094999930356,
+    "latency_ms_p95": 12.97290499787777,
+    "throughput_qps_bs32": 181.7721438911202,
+    "size_mb": 132.28423500061035,
+    "params": 23854080
+  },
+  "process_rss_increase_mb": 676.67578125,
+  "minilm_lr_cpu": {
+    "macro_f1": 0.8925279062160782,
+    "latency_ms_mean": 10.372687502385816,
+    "latency_ms_p95": 13.662075003958305,
+    "size_mb": 86.67453193664551,
+    "params": 22713216
+  },
+  "student_gpu_fp32": {
+    "latency_ms_mean": 6.0485134983900934,
+    "latency_ms_p95": 8.130895026260985,
+    "peak_gpu_mb": 267.14697265625
+  }
+}

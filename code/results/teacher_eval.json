@@ -1,0 +1,174 @@
+{
+  "teacher_name": "Qwen/Qwen2.5-3B-Instruct (4-bit NF4)",
+  "teacher_params": 1698672640,
+  "zero_shot": {
+    "model": "Teacher zero_shot",
+    "macro_f1": 0.8227825514199966,
+    "accuracy": 0.8275,
+    "invalid_rate": 0.007499999999999951,
+    "per_class": {
+      "card_arrival": {
+        "precision": 0.6470588235294118,
+        "recall": 0.825,
+        "f1-score": 0.7252747252747253,
+        "support": 40.0
+      },
+      "card_delivery_estimate": {
+        "precision": 0.7317073170731707,
+        "recall": 0.75,
+        "f1-score": 0.7407407407407407,
+        "support": 40.0
+      },
+      "lost_or_stolen_card": {
+        "precision": 0.6031746031746031,
+        "recall": 0.95,
+        "f1-score": 0.7378640776699029,
+        "support": 40.0
+      },
+      "compromised_card": {
+        "precision": 1.0,
+        "recall": 0.375,
+        "f1-score": 0.5454545454545454,
+        "support": 40.0
+      },
+      "exchange_rate": {
+        "precision": 0.975609756097561,
+        "recall": 1.0,
+        "f1-score": 0.9876543209876543,
+        "support": 40.0
+      },
+      "card_payment_wrong_exchange_rate": {
+        "precision": 0.975,
+        "recall": 0.975,
+        "f1-score": 0.975,
+        "support": 40.0
+      },
+      "top_up_failed": {
+        "precision": 0.7450980392156863,
+        "recall": 0.95,
+        "f1-score": 0.8351648351648352,
+        "support": 40.0
+      },
+      "top_up_reverted": {
+        "precision": 1.0,
+        "recall": 0.7,
+        "f1-score": 0.8235294117647058,
+        "support": 40.0
+      },
+      "transfer_not_received_by_recipient": {
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1-score": 0.8571428571428571,
+        "support": 40.0
+      },
+      "cash_withdrawal_charge": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 40.0
+      },
+      "accuracy": 0.8275,
+      "macro avg": {
+        "precision": 0.8677648539090435,
+        "recall": 0.8275,
+        "f1-score": 0.8227825514199967,
+        "support": 400.0
+      },
+      "weighted avg": {
+        "precision": 0.8677648539090432,
+        "recall": 0.8275,
+        "f1-score": 0.8227825514199967,
+        "support": 400.0
+      }
+    },
+    "latency_ms_mean": 523.3529379958054,
+    "latency_ms_p95": 798.761939961696,
+    "peak_gpu_mb": 2040.884765625,
+    "device": "NVIDIA GeForce RTX 4050 Laptop GPU"
+  },
+  "few_shot": {
+    "model": "Teacher few_shot",
+    "macro_f1": 0.8720511165519167,
+    "accuracy": 0.875,
+    "invalid_rate": 0.0,
+    "per_class": {
+      "card_arrival": {
+        "precision": 0.9166666666666666,
+        "recall": 0.55,
+        "f1-score": 0.6875,
+        "support": 40.0
+      },
+      "card_delivery_estimate": {
+        "precision": 0.6785714285714286,
+        "recall": 0.95,
+        "f1-score": 0.7916666666666666,
+        "support": 40.0
+      },
+      "lost_or_stolen_card": {
+        "precision": 0.6896551724137931,
+        "recall": 1.0,
+        "f1-score": 0.8163265306122449,
+        "support": 40.0
+      },
+      "compromised_card": {
+        "precision": 1.0,
+        "recall": 0.6,
+        "f1-score": 0.75,
+        "support": 40.0
+      },
+      "exchange_rate": {
+        "precision": 0.9523809523809523,
+        "recall": 1.0,
+        "f1-score": 0.975609756097561,
+        "support": 40.0
+      },
+      "card_payment_wrong_exchange_rate": {
+        "precision": 0.9743589743589743,
+        "recall": 0.95,
+        "f1-score": 0.9620253164556962,
+        "support": 40.0
+      },
+      "top_up_failed": {
+        "precision": 0.8604651162790697,
+        "recall": 0.925,
+        "f1-score": 0.891566265060241,
+        "support": 40.0
+      },
+      "top_up_reverted": {
+        "precision": 0.9210526315789473,
+        "recall": 0.875,
+        "f1-score": 0.8974358974358975,
+        "support": 40.0
+      },
+      "transfer_not_received_by_recipient": {
+        "precision": 1.0,
+        "recall": 0.925,
+        "f1-score": 0.961038961038961,
+        "support": 40.0
+      },
+      "cash_withdrawal_charge": {
+        "precision": 1.0,
+        "recall": 0.975,
+        "f1-score": 0.9873417721518988,
+        "support": 40.0
+      },
+      "accuracy": 0.875,
+      "macro avg": {
+        "precision": 0.8993150942249832,
+        "recall": 0.875,
+        "f1-score": 0.8720511165519167,
+        "support": 400.0
+      },
+      "weighted avg": {
+        "precision": 0.8993150942249832,
+        "recall": 0.875,
+        "f1-score": 0.8720511165519167,
+        "support": 400.0
+      }
+    },
+    "latency_ms_mean": 705.2569299994502,
+    "latency_ms_p95": 1022.1858600009,
+    "peak_gpu_mb": 2098.44921875,
+    "device": "NVIDIA GeForce RTX 4050 Laptop GPU"
+  }
+}

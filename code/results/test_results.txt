@@ -1,0 +1,21 @@
+PASSED test_parse_numbered_list
+PASSED test_prompt_contains_persona_style_and_seeds
+PASSED test_plain_prompt_has_no_persona
+PASSED test_vocab_coverage_detects_gibberish
+PASSED test_heuristic_filter_reasons
+PASSED test_semantic_dedup_removes_paraphrase
+PASSED test_dedup_disabled_above_one
+PASSED test_centroid_filter_rejects_mislabelled
+PASSED test_distinct_n
+PASSED test_parse_teacher_label[card_arrival-card_arrival-True]
+PASSED test_parse_teacher_label[The intent is: `top_up_reverted`.-top_up_reverted-True]
+PASSED test_parse_teacher_label[card_payment_wrong_exchange_rate-card_payment_wrong_exchange_rate-True]
+PASSED test_parse_teacher_label[exchange rate-exchange_rate-False]
+PASSED test_split_sizes
+PASSED test_no_leakage_between_splits
+PASSED test_synthetic_has_no_test_sentences
+PASSED test_filtered_data_is_clean
+PASSED test_every_student_config_has_three_seeds
+PASSED test_metrics_in_valid_range
+PASSED test_int8_student_keeps_accuracy
+============================= 20 passed in 28.48s =============================

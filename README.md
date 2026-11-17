@@ -41,6 +41,7 @@ code/
   07_figures.py          figures for the paper
   08_stats.py            bootstrap CIs and McNemar tests
   pipeline/              teacher wrapper, filtering, student training
+  tests/                 20 automated unit and integration tests (pytest)
   data/                  seeds, test set, raw and filtered synthetic data
   results/               JSON / CSV metrics, per-item predictions
   figures/               PNG figures
@@ -62,6 +63,7 @@ cd code
 ../.venv/Scripts/python 06_benchmark.py
 ../.venv/Scripts/python 07_figures.py
 ../.venv/Scripts/python 08_stats.py
+../.venv/Scripts/python -m pytest tests -v   # 20 tests
 ```
 Full run time is about 1 hour on an RTX 4050 Laptop GPU (6 GB). To use Llama-3 or Mistral through
 Ollama, LM Studio, vLLM or Groq, set `TEACHER_BACKEND = "openai"` in `config.py`.

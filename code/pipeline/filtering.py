@@ -39,6 +39,9 @@ class Embedder:
         self._cache: dict[str, np.ndarray] = {}
 
     def encode(self, texts):
+        if len(texts) == 0:                      # e.g. an empty seed set
+            dim = self.model.get_sentence_embedding_dimension()
+            return np.zeros((0, dim), dtype=np.float32)
         missing = [t for t in dict.fromkeys(texts) if t not in self._cache]
         if missing:
             vecs = self.model.encode(missing, batch_size=128, normalize_embeddings=True,
@@ -95,7 +98,7 @@ def semantic_dedup(df: pd.DataFrame, seeds: pd.DataFrame, emb: Embedder,
     kept_idx = []
     for pos, i in enumerate(order):
         v = X[pos]
-        if (kept_mat[:n_kept] @ v).max() < threshold:
+        if n_kept == 0 or (kept_mat[:n_kept] @ v).max() < threshold:
             kept_idx.append(i)
             kept_mat[n_kept] = v
             n_kept += 1
